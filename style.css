@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:wght@100&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*The box-sizing property allows us to include the padding and border in an element's total width and height. 
+	If you set box-sizing: border-box; on an element, padding and border are included in the width and height:
+	Both divs are the same size now!*/
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans', Sans-serif;
+}
+
+p{
+	margin-bottom: 15px;
+	font-size: 15px;
+	line-height: 20px; /*It is a space between the lines*/
+	color: #a9a9a9;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+h1 .title{
+	margin-bottom: 20px;
+	color: #444444;
+	font-family: 'Allura', cursive;
+	text-transform: uppercase;
+	font-size: 38px;
+	word-spacing: 25px;
+	letter-spacing: 5px;
+}
+
+.btn a{
+	display: block;
+	width: 100px;
+	height: 35px;
+	border: 2px solid #fb2274;
+	/*border-radius: 2px;
+	border-style: solid;
+	border-color: #fb2274;*/
+	line-height: 35px;  /*It is used place the text vertically in the center*/
+	margin: 25px auto 0;    /* top 25px 0 bottom ,auto margin property is used to place the button horizontally in the center*/
+	color: #fb2274;
+	text-align: center;
+	font-weight: bold;
+}
+
+.main_container{
+	position: relative;
+
+}
+
+/*Navigation Bar*/
+
+.navbar{
+	width: 100%;
+	height: 65px;
+	display: flex;
+	justify-content: space-around; /*It is used to give space logo and navigation menus*/
+	align-items: center;
+	position: absolute;
+}
+
+.logo a{
+	font-family: 'Allura', cursive;
+	font-size: 32px;
+	color: #fb2274;
+}
+
+.navbar .navbar_items ul{
+	display: flex;
+} 
+
+.navbar .navbar_items ul li{
+	text-transform: uppercase;
+	margin: 0 10px;
+}
+.navbar .navbar_items ul li a{
+	font-weight: bold;
+	color: #fff;
+}
+
+.navbar .navbar_items ul li a:hover{
+	color: #fb2274;
+	transition: 0.5s ease;
+}
+
+
+/*Banner Image*/
+
+.banner_image{
+	background-image: url("images/banner.jpg");
+	width: 100%;
+	height: 600px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner_content{
+	text-align: center;
+	color: #fff;
+}
+
+.banner_content h1{
+	text-transform: uppercase;
+	line-height: 38px;
+	margin-bottom: 15px;
+}
+
+.banner_content p{
+	color: #fff;
+	font-size: 20px;
+}
+
+.banner_content h1 span{
+	color: #fb2274;
+}
+
+/*About Us*/ 
+
+.about{
+	padding: 5% 10%;
+	text-align: center;
+	background-color: #F5F5DC;
+}
+
+.about p{
+	color: #A9A9A9;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/*Our Services*/
+
+.services{
+	background: #f5f5f5;
+	padding: 5% 10%;
+	text-align: center;
+}
+
+.services .our-service{
+	font-weight: bold;
+}
+
+.services .diff_services  .diff_service_item .diff-short{
+	font-weight: bold;
+}
+
+
+.diff_services{
+	display: flex;
+	margin-top: 35px;
+	justify-content: space-between;
+}
+
+.diff_service_item{
+	width: 30%;
+}
+
+.diff_service_item img{
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+.diff_service_item h3{
+	color: #fb2274;
+	margin-bottom: 15px;
+}
+
+
+/*Contact Us*/
+
+.contact-us{
+	padding: 5% 10%;
+	text-align: center;
+	background-color: #E6E6FA;
+}
+
+.contact-us .form_input{
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.contact-us .form_input input[type="email"]{
+	width: 200px;
+	padding: 12px 20px;
+	border: 1px solid #ccc;
+	font-weight: bold;
+}
+
+.contact-us .form_input input[type="text"]{
+	width: 200px;
+	padding: 12px 20px;
+	font-weight: bold;
+	border: 1px solid #ccc;
+}
+
+.contact-us .form_input textarea{
+	width: 200px;
+	padding: 12px 20px;
+	font-weight: bold;
+	height: 80px;
+	resize: none; /*It will stop resizing*/
+	border: 1px solid #ccc;
+}
+
+/*Our Team*/
+
+.our_team{
+	padding: 5% 10%;
+	text-align: center;
+	background-color: #f5f5f5;
+}
+
+.our_team .ourteam_wrapper .team{
+	display: flex;
+	margin-top: 30px;
+	justify-content: space-between;
+}
+
+.our_team .ourteam_wrapper .team-1.team{
+	margin-bottom: 25px;
+}
+
+.our_team .ourteam_wrapper .team_member{
+	width: 30%;
+	height: auto;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.our_team .ourteam_wrapper .team_member img{
+	width: 100%;
+	display: block;
+	height: auto;
+	transition: all 0.5s ease;
+}
+
+.our_team .ourteam_wrapper .team_member:hover img{
+	transform: scale(1.1);
+}
+
+/*Footer*/ 
+
+.footer{
+	width: 100%;
+	text-align: center;
+	background-color: #444444;
+	padding: 20px 0;
+	font-weight: bold;
+}
+
+.footer a{
+	color: #fff;
+}
+
+/*Responsive Part*/
+
+@media (max-width: 720px){
+	.navbar{
+		height: auto;
+		flex-direction: column;
+	}
+	.navbar ul{
+		flex-direction: column;
+		text-align: center;
+	}
+	.navbar ul li{
+		margin-bottom: 5px;
+	}
+	.logo{
+		margin-bottom: 25px;
+	}
+	.banner_content{
+		margin-top: 35px;
+	}
+}
+
+/*Arrow*/
+
+.arrow{
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	width: 40px;
+	height: 40px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	background-color: #fb2274;
+	border-radius: 50%;
+}
+
+.arrow img{
+	width: 20px;
+	height: 20px;
+	z-index: 1;
+}
